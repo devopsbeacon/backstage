@@ -463,8 +463,9 @@ Now we have a fully operational Backstage deployment! 🎉 For a _**grand
 reveal**_, you can forward a local port to the service:
 
 ```shell
-$ sudo kubectl port-forward --namespace=backstage svc/backstage 80:80
-Forwarding from 127.0.0.1:80 -> 7007
+$ sudo kubectl port-forward --namespace=backstage svc/backstage 8080:80
+Forwarding from 127.0.0.1:8080 -> 7007
+Forwarding from [::1]:8080 -> 7007
 ```
 
 This shows port 7007 since `port-forward` doesn't _really_ support services, so
